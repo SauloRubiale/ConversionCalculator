@@ -2,29 +2,50 @@ const euroinput = document.getElementById("euro");
 
 const dolarinput = document.getElementById("dolar");
 
-const converterInput = document.getElementById("botao-converter");
+const converterEuroInput = document.getElementById("botao-converter-euro");
 
-const resultadoInput = document.getElementById("resultado");
+const converterDolarInput = document.getElementById("botao-converter-dolar");
+
+const resultadoEuroInput = document.getElementById("resultadoEuro");
+
+const resultadoDolarInput = document.getElementById("resultadoDolar");
 
 const euro = 6;
 
 const dolar = 5.2;
 
-converterInput.addEventListener("click", () => {
+const botaoLimpar = document.getElementById("botao-limpar");
+
+botaoLimpar.addEventListener("click", () => {
+  euroinput.value = "";
+  dolarinput.value = "";
+
+  resultadoEuroInput.innerHTML = "";
+  resultadoDolarInput.innerHTML = "";
+});
+
+converterEuroInput.addEventListener("click", () => {
   if (euroinput.value !== "" && euroinput.value > 0) {
     const valor = euroinput.value;
 
     const resultado = valor * euro;
 
-    resultadoInput.innerHTML = `<span class="text-success">Resultado: R$ ${resultado.toFixed(2)}</span>`;
-  } else if (dolarinput.value !== "" && dolarinput.value > 0) {
+    resultadoEuroInput.innerHTML = `<span class="text-primary">Conversão de Euro para Real: R$ ${resultado.toFixed(2)}</span>`;
+  } else {
+    resultadoEuroInput.innerHTML =
+      '<span class="text-danger">Digite um valor de Euro válido!</span>';
+  }
+});
+
+converterDolarInput.addEventListener("click", () => {
+  if (dolarinput.value !== "" && dolarinput.value > 0) {
     const valor = dolarinput.value;
 
     const resultado = valor * dolar;
 
-    resultadoInput.innerHTML = `<span class="text-success">Resultado: R$ ${resultado.toFixed(2)}</span>`;
+    resultadoDolarInput.innerHTML = `<span class="text-success">Conversão de Dólar para Real: R$ ${resultado.toFixed(2)}</span>`;
   } else {
-    resultadoInput.innerHTML =
-      '<span class="text-danger">Digite um valor válido!</span>';
+    resultadoDolarInput.innerHTML =
+      '<span class="text-danger">Digite um valor de Dólar válido!</span>';
   }
 });

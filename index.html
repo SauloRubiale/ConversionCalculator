@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Converter</title>
 
-    <link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container mt-5">
-      <div class="card p-4 mx-auto shadow" style="max-width: 400px">
-        <h1 class="text-center mb-4">Conversor</h1>
+    <div
+      class="container d-flex justify-content-center align-items-center vh-100"
+    >
+      <div class="card p-4 shadow-lg" style="width: 25rem">
+        <h2 class="text-center mb-4">Conversor de Moedas</h2>
 
         <input
           type="number"
@@ -26,15 +28,31 @@
           placeholder="Valor em dólar ($)"
         />
 
-        <button id="botao-converter" class="btn btn-success w-100">
-          Converter para Real
-        </button>
+        <div class="d-flex gap-2 justify-content-center">
+          <button id="botao-converter-euro" class="btn btn-outline-primary">
+            Converter Euro
+          </button>
+          <button id="botao-converter-dolar" class="btn btn-outline-success">
+            Converter Dólar
+          </button>
+        </div>
 
-        <div id="resultado" class="mt-4 text-center fw-bold"></div>
+        <div class="d-flex justify-content-center mt-4">
+          <div>
+            <div id="resultadoEuro" class="text-start fw-bold mb-2"></div>
+            <div id="resultadoDolar" class="text-start fw-bold"></div>
+          </div>
+        </div>
+
+        <div class="d-grid">
+          <button id="botao-limpar" class="btn btn-outline-dark mt-4">
+            Limpar tudo
+          </button>
+        </div>
       </div>
     </div>
 
-    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script src="script.js"></script>
   </body>
