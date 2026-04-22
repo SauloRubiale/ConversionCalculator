@@ -32,7 +32,8 @@ Aplicação web para conversão de moedas estrangeiras (Euro e Dólar) para Real
 
 ## 📸 Preview
 
-*(adicione aqui um print ou GIF do projeto rodando)*
+<img width="860" height="719" alt="Captura de tela 2026-04-22 122337" src="https://github.com/user-attachments/assets/918070dd-f239-4146-9b71-d1db9bdf499f" />
+
 
 ---
 
