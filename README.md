@@ -1,18 +1,52 @@
-# 💰 Calculadora de Conversão Monetária (Euro/Dólar)
+# 💰 Calculadora de Conversão Monetária
 
-Projeto focado na experiência do usuário (UX) e na aplicação prática de lógica de programação para conversão de moedas estrangeiras para Real.
+Aplicação web para conversão de moedas estrangeiras (Euro e Dólar) para Real, com foco em usabilidade e interação dinâmica.
 
-## 🚀 Funcionalidades e Destaques
-- **Interatividade:** Conversão dinâmica com manipulação do DOM em tempo real.
-- **Validação:** Tratamento de erros e validação de dados de entrada.
-- **Responsividade:** Interface adaptável para qualquer tamanho de tela (Mobile-First).
-- **Boas Práticas:** Uso de *Conventional Commits* para um histórico de mensagens limpo e profissional.
+---
 
-## 🛠️ Tecnologias e Ferramentas
-- **Linguagem:** JavaScript (ES6+)
-- **Estilização:** HTML5, CSS3 e Bootstrap 5
-- **Versionamento:** Git & GitHub
-- **Interface Git:** GitKraken
+## 🚀 Funcionalidades
 
-## 🔗 Link do Projeto
-Acesse o projeto: [Abrir calculadora de Conversão](https://saulorubiale.github.io/CalculadoraConversao/)
+* 🔄 Conversão em tempo real com atualização dinâmica na interface
+* ✅ Validação de entrada para evitar valores inválidos
+* 📱 Design responsivo (Mobile-First)
+* ⚡ Manipulação eficiente do DOM com JavaScript puro
+* 🧾 Tratamento de erros para melhor experiência do usuário
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+* Bootstrap 5
+* Git & GitHub
+
+---
+
+## 🌐 Acesse o projeto
+
+👉 [Clique aqui para visualizar](https://saulorubiale.github.io/CalculadoraConversao/)
+
+---
+
+## 📸 Preview
+
+*(adicione aqui um print ou GIF do projeto rodando)*
+
+---
+
+## 📌 Aprendizados
+
+Neste projeto, pratiquei:
+
+* Manipulação do DOM
+* Estruturação de lógica para conversão de valores
+* Validação de dados de entrada
+* Organização de código em JavaScript
+
+---
+
+## 📎 Observações
+
+Projeto desenvolvido com foco em consolidar fundamentos de desenvolvimento front-end e boas práticas de versionamento (Conventional Commits).
